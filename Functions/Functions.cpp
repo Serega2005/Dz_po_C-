@@ -237,6 +237,116 @@ void Sort(char drr[], const int n)
 		}
 	}
 }
+void Sort(int arr2[ROWS][COLS], const int m, const int n)
+{
+	int iterations = 0;
+	int exterations = 0;
+	for (int i = 0; i < m; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			for (int k = i; k < m; k++)
+			{
+				iterations++;
+				for (int l = k==i ? j + 1 : 0 ; l < n; l++)
+				{
+					if (arr2[k][l] < arr2[i][j])
+					{
+						int buffer = arr2[i][j];
+						arr2[i][j] = arr2[k][l];
+						arr2[k][l] = buffer;
+						exterations++;
+					}
+				}
+			}
+		}
+	}
+	cout << "количество итераций: " << iterations << endl;
+	cout << "количество обменов: " << exterations << endl;
+}
+void Sort(double brr2[ROWS][COLS], const int m, const int n)
+{
+	int iterations = 0;
+	int exterations = 0;
+	for (int i = 0; i < m; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			for (int k = i; k < m; k++)
+			{
+				iterations++;
+				for (int l = k == i ? j + 1 : 0; l < n; l++)
+				{
+					if (brr2[k][l] < brr2[i][j])
+					{
+						double buffer = brr2[i][j];
+						brr2[i][j] = brr2[k][l];
+						brr2[k][l] = buffer;
+						exterations++;
+					}
+				}
+			}
+		}
+	}
+	cout << "количество итераций: " << iterations << endl;
+	cout << "количество обменов: " << exterations << endl;
+}
+void Sort(float brr2[ROWS][COLS], const int m, const int n)
+{
+	int iterations = 0;
+	int exterations = 0;
+	for (int i = 0; i < m; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			for (int k = i; k < m; k++)
+			{
+				iterations++;
+				for (int l = k == i ? j + 1 : 0; l < n; l++)
+				{
+					if (brr2[k][l] < brr2[i][j])
+					{
+						float buffer = brr2[i][j];
+						brr2[i][j] = brr2[k][l];
+						brr2[k][l] = buffer;
+						exterations++;
+					}
+				}
+			}
+		}
+	}
+	cout << "количество итераций: " << iterations << endl;
+	cout << "количество обменов: " << exterations << endl;
+}
+void Sort(char drr2[ROWS][COLS], const int m, const int n)
+{
+	int iterations = 0;
+	int exterations = 0;
+	for (int i = 0; i < m; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			for (int k = i; k < m; k++)
+			{
+				iterations++;
+				for (int l = k == i ? j + 1 : 0; l < n; l++)
+				{
+					if (drr2[k][l] < drr2[i][j])
+					{
+						char buffer = drr2[i][j];
+						drr2[i][j] = drr2[k][l];
+						drr2[k][l] = buffer;
+						exterations++;
+					}
+				}
+			}
+		}
+	}
+	cout << "количество итераций: " << iterations << endl;
+	cout << "количество обменов: " << exterations << endl;
+}
+
+
 
 int Sum(int arr[], const int n)
 {
@@ -310,7 +420,7 @@ float Sum(float crr2[ROWS][COLS], const int m, const int n)
 	}
 	return sum;
 }
-int Sum(char drr2[ROWS][COLS], const int m, const int n)
+char Sum(char drr2[ROWS][COLS], const int m, const int n)
 {
 	double sum = 0;
 	for (int i = 0; i < m; i++)
@@ -429,9 +539,9 @@ float minValueIn(float crr2[ROWS][COLS], const int m, const int n)
 	}
 	return min;
 }
-int minValueIn(char drr2[ROWS][COLS], const int m, const int n)
+char minValueIn(char drr2[ROWS][COLS], const int m, const int n)
 {
-	float min = drr2[0][0];
+	char min = drr2[0][0];
 	for (int i = 0; i < m; i++)
 	{
 		for (int j = 0; j < n; j++)
@@ -514,9 +624,9 @@ float maxValueIn(float crr2[ROWS][COLS], const int m, const int n)
 	}
 	return max;
 }
-int maxValueIn(char drr2[ROWS][COLS], const int m, const int n)
+char maxValueIn(char drr2[ROWS][COLS], const int m, const int n)
 {
-	double max = drr2[0][0];
+	char max = drr2[0][0];
 	for (int i = 0; i < m; i++)
 	{
 		for (int j = 0; j < n; j++)

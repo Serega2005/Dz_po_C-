@@ -47,7 +47,7 @@ void main()
 	cout << delimiter << endl;
 
 	cout << "одномерный массив типа char: \n";
-	double drr[n];
+	char drr[n];
 	FillRand(drr, n);
 	Print(drr, n);
 	cout << "Сумма элементов массива: " << Sum(drr, n) << endl;
@@ -68,6 +68,9 @@ void main()
 	cout << "Среднее  арифметическое элементов массива: " << Avg(arr2, ROWS, COLS)<<endl;
 	cout << "Минимальное значение в массиве: " << minValueIn(arr2, ROWS, COLS) << endl;
 	cout << "Максимальное значение в массиве: " << maxValueIn(arr2, ROWS, COLS) << endl;
+	cout << "Отсортированый массив: \n";
+	Sort(arr2, ROWS, COLS);
+	Print(arr2, ROWS, COLS);
 	cout << delimiter << endl;
 
 	cout << "Двумерный массив типа double:\n";
@@ -78,16 +81,21 @@ void main()
 	cout << "Среднее  арифметическое элементов массива: " << Avg(brr2, ROWS, COLS) << endl;
 	cout << "Минимальное значение в массиве: " << minValueIn(brr2, ROWS, COLS) << endl;
 	cout << "Максимальное значение в массиве: " << maxValueIn(brr2, ROWS, COLS) << endl;
+	cout << "Отсортированый массив: \n";
+	Sort(brr2, ROWS, COLS);
+	Print(brr2, ROWS, COLS);
 	cout << delimiter << endl;
 
 	cout << "Двумерный массив типа float:\n";
-	double crr2[ROWS][COLS];
+	float crr2[ROWS][COLS];
 	FillRand(crr2, ROWS, COLS);
 	Print(crr2, ROWS, COLS);
 	cout << "Сумма элементов массива: " << Sum(crr2, ROWS, COLS) << endl;
 	cout << "Среднее  арифметическое элементов массива: " << Avg(crr2, ROWS, COLS) << endl;
 	cout << "Минимальное значение в массиве: " << minValueIn(crr2, ROWS, COLS) << endl;
 	cout << "Максимальное значение в массиве: " << maxValueIn(crr2, ROWS, COLS) << endl;
+	Sort(crr2, ROWS, COLS);
+	Print(crr2, ROWS, COLS);
 	cout << delimiter << endl;
 
 	cout << "Двумерный массив типа char:\n";
@@ -98,6 +106,8 @@ void main()
 	cout << "Среднее  арифметическое элементов массива: " << Avg(drr2, ROWS, COLS) << endl;
 	cout << "Минимальное значение в массиве: " << minValueIn(drr2, ROWS, COLS) << endl;
 	cout << "Максимальное значение в массиве: " << maxValueIn(drr2, ROWS, COLS) << endl;
+	Sort(drr2, ROWS, COLS);
+	Print(drr2, ROWS, COLS);
 	cout << delimiter << endl;
 
 	/*FillRand(arr, n, 1000, 2000);
