@@ -109,28 +109,4 @@ void main()
 	Sort(drr2, ROWS, COLS);
 	Print(drr2, ROWS, COLS);
 	cout << delimiter << endl;
-
-	/*FillRand(arr, n, 1000, 2000);
-	Print(arr, n);
-	cout << "Сумма элементов массива: " << Sum(arr, n) << endl;
-	cout << "Среднее арифметическое элементов: "<<Avg(arr,n) <<endl;
-	cout << "Минимальное значение в массиве: " << minValueIn(arr, n) << endl;
-	cout << "Максимальное значение в массиве: " << maxValueIn(arr, n) << endl;
-	const int m = 10;
-	int brr[m];
-	FillRand(brr, m,80);
-	Print(brr, m);
-	cout << "Сумма элементов массива: " << Sum(brr, m) << endl;
-	cout << "Среднее арифметическое элементов: " << Avg(brr, m) << endl;
-	cout << "Минимальное значение в массиве: " << minValueIn(brr, m) << endl;
-	cout << "Максимальное значение в массиве: " << maxValueIn(brr, m) << endl;
-
-	const int SIZE_C = 12;
-	int crr[SIZE_C];
-	FillRand(crr, SIZE_C);
-	Print(crr, SIZE_C);
-	cout << "Сумма элементов массива: " << Sum(crr, SIZE_C) << endl;
-	cout << "Среднее арифметическое элементов: " << Avg(crr, SIZE_C) << endl;
-	cout << "Минимальное значение в массиве: " << minValueIn(crr, SIZE_C) << endl;
-	cout << "Максимальное значение в массиве: " << maxValueIn(crr, SIZE_C) << endl;*/
 }
